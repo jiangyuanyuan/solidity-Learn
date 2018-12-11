@@ -60,3 +60,22 @@ contract CCB is Bank(10){
 	}
 
 }
+
+
+contract TestThrows{
+	function testAssert() public pure{
+		assert(1==2);
+	}
+
+	function testRequire() public pure{
+		require(2 == 1);
+	}
+
+	function testRevert() public pure{
+		revert();
+	}
+
+	function testThrow() public pure{
+		throw;
+	}
+}
